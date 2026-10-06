@@ -14,4 +14,3 @@ jobs:
           huggingface_repo_id: gw0/jobfit-jevbench
           hf_token: ${{ secrets.HF_TOKEN }}
           repo_type: dataset
-          private: true

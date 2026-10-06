@@ -39,16 +39,20 @@ configs:
 
 # JobFit JevBench
 
+[![GitHub](https://img.shields.io/badge/GitHub-gw0%2Fjobfit--jevbench-181717?logo=github)](https://github.com/gw0/jobfit-jevbench)
+[![Sync to HF](https://img.shields.io/github/actions/workflow/status/gw0/jobfit-jevbench/sync-to-hf.yml?label=sync%20to%20HF)](https://github.com/gw0/jobfit-jevbench/actions/workflows/sync-to-hf.yml)
+[![Sponsor](https://img.shields.io/badge/sponsor-%E2%9D%A4-red?logo=github-sponsors)](https://github.com/sponsors/gw0)
+
 A CV/job-post fit-scoring benchmark: 250 synthetic CVs, 404 job postings and 5,000 CV/job pairs, each judged on 17 questions with a score and a confidence. It trains and evaluates [jobfit-model](https://github.com/gw0/jobfit-model), a Jev-like typed-decision model (a state plus typed questions in, one typed answer per question id out).
 
 ## Layout
 
 ```
-questions.json   the 17 questions: type, name, scope, question text, 5 criteria
-cvs/*.md         synthetic CVs, plain markdown
-jobs/<company>/*.md   job postings, markdown with YAML frontmatter
-labels/          LLM-judge labels, one JSON object per line
-splits/          which pairs belong to train / val / test / calib
+questions.json      # the 17 questions: type, name, scope, question text, 5 criteria
+cvs/*.md            # synthetic CVs, plain markdown
+jobs/<company>/*.md # job postings, markdown with YAML frontmatter
+labels/             # LLM-judge labels, one JSON object per line
+splits/             # which pairs belong to train / val / test / calib
 ```
 
 ## Files
@@ -104,7 +108,7 @@ Job fetching (`data/fetch_jobs/`), CV generation, labelling and PII scrubbing (`
 
 ## Data note
 
-CVs are synthetic. Job postings were collected from public Greenhouse, Lever and Ashby pages; each file keeps its source `url`, and rights remain with the original publishers. This is not legal advice. To request removal of a posting, contact gw.2026@ena.one.
+CVs are synthetic. Job postings were collected from public Greenhouse, Lever and Ashby pages; each file keeps its source `url`, and rights remain with the original publishers. This is not a legal opinion.
 
 ## License
 
