@@ -78,7 +78,7 @@ splits/          which pairs belong to train / val / test / calib
 ```python
 from datasets import load_dataset
 
-root = "hf://datasets/<user>/jobfit-jevbench"
+root = "hf://datasets/gw0/jobfit-jevbench"
 pairs = load_dataset("json", data_files=f"{root}/labels/pairs.jsonl", split="train").to_pandas()
 test = load_dataset("json", data_files=f"{root}/splits/test.jsonl", split="train").to_pandas()
 test = test.merge(pairs, on=["cv", "job"])
