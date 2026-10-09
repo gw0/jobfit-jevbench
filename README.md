@@ -43,7 +43,7 @@ configs:
 [![HF Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20HF-dataset-orange)](https://huggingface.co/datasets/gw0/jobfit-jevbench)
 [![HF Model](https://img.shields.io/badge/%F0%9F%A4%97%20HF-model-yellow)](https://huggingface.co/gw0/jobfit-model)
 [![HF Space](https://img.shields.io/badge/%F0%9F%A4%97%20HF-space-blue)](https://huggingface.co/spaces/gw0/jobfit-app)
-[![CI](https://img.shields.io/github/actions/workflow/status/gw0/jobfit-jevbench/sync-to-hf.yml?label=sync%20to%20HF)](https://github.com/gw0/jobfit-jevbench/actions/workflows/sync-to-hf.yml)
+[![CD](https://img.shields.io/github/actions/workflow/status/gw0/jobfit-jevbench/cd.yml?label=cd)](https://github.com/gw0/jobfit-jevbench/actions/workflows/cd.yml)
 [![Sponsor](https://img.shields.io/badge/sponsor-%E2%9D%A4-red?logo=github-sponsors)](https://github.com/sponsors/gw0)
 
 A CV/job-post fit-scoring benchmark: 250 synthetic CVs, 404 job postings and 5,000 CV/job pairs, each judged on 17 questions with a score and a confidence. It trains and evaluates [jobfit-model](https://github.com/gw0/jobfit-model), a Jev-like typed-decision model (a state plus typed questions in, one typed answer per question id out).

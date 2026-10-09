@@ -1,4 +1,4 @@
-name: sync-to-hf
+name: cd
 on:
   push:
     branches: [main]
